@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1575110169156-4b67c0d8c336?ixlib=rb-1.2.1&auto=format&fit=crop&w=645&q=80);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    border: 4px solid pink;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 2rem;
+    padding: .5rem;
+    transition: all .07s ease;
+    width: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 .5rem paleturquoise;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: paleturquoise;
+    box-shadow: 0 0 10px paleturquoise;
+}
+
+kbd {
+    display: block;
+    font-size: 40px;
+}
+
+.sound {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }

@@ -1,0 +1,37 @@
+:root {
+    --base: rgba(255, 192, 203, 0.7);
+    --spacing: 10px;
+    --blur: 0px;
+  }
+
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+  }
+
+  body {
+    text-align: center;
+    background-image: url(https://wallpaperaccess.com/full/1668918.jpg);
+    color: black;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+
+  .controls {
+    margin-bottom: 50px;
+    font-weight: 200;
+    height:3.65rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  input {
+      margin: 0 1rem;
+    width: 100px;
+  }

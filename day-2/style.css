@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+.clock {
+    background-image: url(https://image.freepik.com/free-vector/abstract-colorful-topographic-map-design-vector_1035-14092.jpg);
+    width: 20rem;
+    height: 20rem;
+    border: 10px solid rgb(255, 192, 203);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(255, 192, 203, 0.5),
+      inset 0 0 0 3px pink,
+      inset 0 0 10px paleturquoise,
+      0 0 10px rgba(255,255, 255, 0.2);
+  }
+
+.clock-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+
+.circle-center {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+  .pointer {
+    width: 50%;
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
